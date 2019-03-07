@@ -6,7 +6,7 @@ First you will need to clone the repo; then you can install the necessary NPM pa
 ```bash
 # Clone the repo and enter it
 $ git clone https://github.com/arunkrishna1990/crypto-currency-dashboard.git
-$ cd node-crypto
+$ cd crypto-currency-dashboard
 
 # Install root dependencies
 $ cd server/ npm i
