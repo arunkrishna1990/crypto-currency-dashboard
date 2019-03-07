@@ -1,0 +1,17 @@
+<form [formGroup]="createPortfolioForm" class="form-wrapper">
+  <mat-form-field class="name-field">
+    <input matInput placeholder="Enter Portfolio Name" formControlName="name">
+  </mat-form-field>
+  <div class="currency-list">
+    <mat-selection-list color="primary" formControlName="selectedCurrencies">
+      <mat-list-option color="primary" [value]="item" *ngFor="let item of cryptoCurrencies$|async">
+        {{item.name}} <br />{{item.price}}$
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+  <nav>
+    <mat-dialog-actions>
+      <button mat-raised-button id="create" color="primary" (click)="create()">Create</button>
+    </mat-dialog-actions>
+  </nav>
+</form>

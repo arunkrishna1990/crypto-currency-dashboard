@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <mat-accordion>
+        <mat-expansion-panel *ngFor="let item of portfolios$|async">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{item.name}}
+                </mat-panel-title>
+                <mat-panel-description>
+                    Total Price ($):{{item.total}}
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-list *ngFor="let currency of item.cryptoCurrencies">
+                <mat-list-item>
+                    {{currency.name}}
+                    <br>
+                    Price($): {{currency.price}}
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

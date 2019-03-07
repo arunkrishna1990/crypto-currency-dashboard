@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "^4.16.4",
+    "axios": "^0.18.0",
+    "dotenv": "6.0.0",
+    "sequelize": "4.38.0",
+    "sequelize-cli": "4.1.1",
+    "sequelize-typescript": "0.6.6",
+    "reflect-metadata": "0.1.12",
+    "pg": "7.4.3",
+    "pg-hstore": "2.3.2",
+    "umzug": "2.1.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.16.1",
+    "@types/jasmine": "^3.3.9",
+    "@types/node": "^11.10.4",
+    "jasmine": "^3.3.1",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333",
+    "cors": "2.8.4"
+  }
+}
