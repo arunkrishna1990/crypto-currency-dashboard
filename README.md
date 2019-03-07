@@ -20,11 +20,11 @@ $ cd crypto-ui/ npm i
 Before starting the server `process.env.API_URL`,`process.env.API_KEY` and `process.env.DB` should be set. (I added a new .env file.)
 #### Start server
 ```bash
-$ cd server/ npm start (This will start the db and server)
+$ cd server/ npm start (This will start the db and server in port 3000)
 ```
 #### Start UI
 ```bash
-$ cd crypto-ui/ npm start (This will start the ui)
+$ cd crypto-ui/ npm start (This will start the ui in port 4200)
 ```
 
 ### Run tests
